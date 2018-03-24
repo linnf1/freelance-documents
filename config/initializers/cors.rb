@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'example.com'
+    origins '*'
 
     resource '*',
       headers: :any,
@@ -16,4 +16,4 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 end
 
 
-#LFLF in production you would add whitlist 
+#LFLF in production you would add whitelist
